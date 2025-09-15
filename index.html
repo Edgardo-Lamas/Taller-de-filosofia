@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taller de Filosofía en Contexto de Encierro - Un espacio de reflexión filosófica">
+    <title>Taller de Filosofía en Contexto de Encierro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS (Animate On Scroll) para las animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header institucional -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Taller de Filosofía</h1>
+                <p class="tagline">En Contexto de Encierro</p>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="main-menu" id="main-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#institucional">Institucional</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto" class="btn-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida/hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h2>Un espacio de reflexión filosófica</h2>
+                <h3>Pensamiento crítico sin límites ni fronteras</h3>
+                <p>El Taller de Filosofía en Contexto de Encierro busca propiciar un espacio de diálogo, 
+                reflexión y construcción colectiva del conocimiento, donde el pensamiento filosófico 
+                sirve como herramienta para la transformación personal y social.</p>
+                <a href="#galeria" class="btn btn-primary">Explorar Contenidos</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Sección de destacados -->
+    <section id="destacados" class="destacados">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Materiales Destacados</h2>
+            <p class="section-description" data-aos="fade-up">Una selección de recursos clave para adentrarse en la reflexión filosófica</p>
+            
+            <div class="destacados-grid">
+                <!-- Elemento destacado 1 -->
+                <div class="destacado-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destacado-img">
+                        <img src="https://via.placeholder.com/400x250?text=Material+1" alt="Material destacado 1">
+                        <div class="tag">Artículo</div>
+                    </div>
+                    <div class="destacado-content">
+                        <h3>La libertad desde el encierro</h3>
+                        <p>Reflexiones sobre el concepto de libertad y sus dimensiones en situaciones de privación física.</p>
+                        <a href="#" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+                
+                <!-- Elemento destacado 2 -->
+                <div class="destacado-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destacado-img">
+                        <img src="https://via.placeholder.com/400x250?text=Material+2" alt="Material destacado 2">
+                        <div class="tag">Video</div>
+                    </div>
+                    <div class="destacado-content">
+                        <h3>Diálogos sobre Ética</h3>
+                        <p>Una conversación abierta sobre los fundamentos éticos y su aplicación en situaciones complejas.</p>
+                        <a href="#" class="btn btn-secondary">Ver video</a>
+                    </div>
+                </div>
+                
+                <!-- Elemento destacado 3 -->
+                <div class="destacado-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destacado-img">
+                        <img src="https://via.placeholder.com/400x250?text=Material+3" alt="Material destacado 3">
+                        <div class="tag">PDF</div>
+                    </div>
+                    <div class="destacado-content">
+                        <h3>Guía de lectura filosófica</h3>
+                        <p>Herramientas metodológicas para abordar textos filosóficos y extraer sus conceptos fundamentales.</p>
+                        <a href="#" class="btn btn-secondary">Descargar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería multimedia -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Galería Multimedia</h2>
+            <p class="section-description" data-aos="fade-up">Explora nuestra colección de recursos para el pensamiento filosófico</p>
+            
+            <!-- Filtros de la galería -->
+            <div class="galeria-filtros" data-aos="fade-up">
+                <button class="filtro-btn active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="imagenes">Imágenes</button>
+                <button class="filtro-btn" data-filter="videos">Videos</button>
+                <button class="filtro-btn" data-filter="audios">Audios</button>
+                <button class="filtro-btn" data-filter="pdfs">PDFs</button>
+                <button class="filtro-btn" data-filter="articulos">Artículos</button>
+            </div>
+            
+            <!-- Contenedor de la galería -->
+            <div class="galeria-contenedor">
+                <!-- Imagen 1 -->
+                <div class="galeria-item imagenes" data-aos="fade-up">
+                    <div class="galeria-img">
+                        <img src="https://via.placeholder.com/300x200?text=Imagen+1" alt="Imagen 1">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Fotografía Taller Grupal</h3>
+                        <p>Encuentro filosófico sobre la identidad, 2024</p>
+                        <a href="#" class="btn btn-small">Ver completo</a>
+                    </div>
+                </div>
+                
+                <!-- Video 1 -->
+                <div class="galeria-item videos" data-aos="fade-up">
+                    <div class="galeria-img video-thumbnail">
+                        <img src="https://via.placeholder.com/300x200?text=Video+1" alt="Video 1">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Conversatorio Ética y Justicia</h3>
+                        <p>Debate sobre la justicia restaurativa, 30 min</p>
+                        <a href="#" class="btn btn-small">Reproducir</a>
+                    </div>
+                </div>
+                
+                <!-- Audio 1 -->
+                <div class="galeria-item audios" data-aos="fade-up">
+                    <div class="galeria-img audio-thumbnail">
+                        <img src="https://via.placeholder.com/300x200?text=Audio+1" alt="Audio 1">
+                        <div class="audio-icon"><i class="fas fa-volume-up"></i></div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Podcast: El tiempo y la memoria</h3>
+                        <p>Reflexiones sobre temporalidad, 45 min</p>
+                        <a href="#" class="btn btn-small">Escuchar</a>
+                    </div>
+                </div>
+                
+                <!-- PDF 1 -->
+                <div class="galeria-item pdfs" data-aos="fade-up">
+                    <div class="galeria-img pdf-thumbnail">
+                        <img src="https://via.placeholder.com/300x200?text=PDF+1" alt="PDF 1">
+                        <div class="pdf-icon"><i class="fas fa-file-pdf"></i></div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Antología de textos filosóficos</h3>
+                        <p>Compendio de fragmentos clásicos, 56 páginas</p>
+                        <a href="#" class="btn btn-small">Descargar</a>
+                    </div>
+                </div>
+                
+                <!-- Artículo 1 -->
+                <div class="galeria-item articulos" data-aos="fade-up">
+                    <div class="galeria-img">
+                        <img src="https://via.placeholder.com/300x200?text=Articulo+1" alt="Artículo 1">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>La filosofía como práctica liberadora</h3>
+                        <p>Ensayo sobre el poder emancipador del pensamiento</p>
+                        <a href="#" class="btn btn-small">Leer</a>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 -->
+                <div class="galeria-item imagenes" data-aos="fade-up">
+                    <div class="galeria-img">
+                        <img src="https://via.placeholder.com/300x200?text=Imagen+2" alt="Imagen 2">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Mural filosófico colaborativo</h3>
+                        <p>Representación visual de conceptos filosóficos</p>
+                        <a href="#" class="btn btn-small">Ver completo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="galeria-ver-mas" data-aos="fade-up">
+                <a href="#" class="btn btn-primary">Ver todos los recursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección institucional -->
+    <section id="institucional" class="institucional">
+        <div class="container">
+            <div class="institucional-content">
+                <div class="institucional-text" data-aos="fade-right">
+                    <h2 class="section-title">El Taller</h2>
+                    <p>El Taller de Filosofía en Contexto de Encierro es una iniciativa educativa que busca promover el pensamiento crítico y la reflexión filosófica como herramientas para la transformación personal y social.</p>
+                    <h3>Objetivos pedagógicos:</h3>
+                    <ul>
+                        <li>Fomentar el pensamiento crítico y la capacidad de reflexión</li>
+                        <li>Desarrollar habilidades argumentativas y dialógicas</li>
+                        <li>Construir espacios de libertad intelectual y expresión</li>
+                        <li>Explorar conceptos filosóficos fundamentales y su aplicación práctica</li>
+                        <li>Generar comunidades de aprendizaje horizontal y colaborativo</li>
+                    </ul>
+                    <p>Este proyecto se desarrolla en el marco del Programa de Educación en Contextos de Encierro, buscando garantizar el acceso a la educación como derecho humano fundamental.</p>
+                </div>
+                <div class="institucional-img" data-aos="fade-left">
+                    <img src="https://via.placeholder.com/500x400?text=Imagen+Institucional" alt="Taller de Filosofía - Encuentro grupal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Voces del Taller</h2>
+            <p class="section-description" data-aos="fade-up">Experiencias y reflexiones de los participantes</p>
+            
+            <div class="testimonios-slider" data-aos="fade-up">
+                <div class="testimonio-item active">
+                    <div class="testimonio-content">
+                        <p>"El taller me abrió una ventana a nuevas formas de pensar. Descubrí que la filosofía no es algo abstracto sino una herramienta para entender mi propia realidad."</p>
+                        <div class="testimonio-autor">- Participante del Taller, 2024</div>
+                    </div>
+                </div>
+                <div class="testimonio-item">
+                    <div class="testimonio-content">
+                        <p>"Aprendí que las preguntas son tan importantes como las respuestas. Este espacio me enseñó a cuestionar lo establecido y a pensar por mí mismo."</p>
+                        <div class="testimonio-autor">- Participante del Taller, 2023</div>
+                    </div>
+                </div>
+                <div class="testimonio-item">
+                    <div class="testimonio-content">
+                        <p>"La filosofía me dio palabras para nombrar lo que sentía. Ahora puedo articular mejor mis ideas y conectar con los demás desde un lugar más profundo."</p>
+                        <div class="testimonio-autor">- Participante del Taller, 2024</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonios-dots" data-aos="fade-up">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamado a la acción -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>¿Listo para adentrarte en la reflexión filosófica?</h2>
+                <p>Accede a todo nuestro contenido y forma parte de esta comunidad de pensamiento</p>
+                <a href="#" class="btn btn-large">Explorar todo el contenido</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Taller de Filosofía</h3>
+                    <p>Un espacio de reflexión filosófica en contexto de encierro</p>
+                    <div class="contacto-info">
+                        <p><i class="fas fa-envelope"></i> contacto@tallerfilosofia.org</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dirección institucional</p>
+                    </div>
+                </div>
+                
+                <div class="footer-enlaces">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#destacados">Materiales</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#institucional">Información</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Mantente informado</h4>
+                    <p>Recibe actualizaciones sobre nuevos materiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-secondary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Taller de Filosofía en Contexto de Encierro. Todos los derechos reservados.</p>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
